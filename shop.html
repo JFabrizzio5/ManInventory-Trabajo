@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>sungla</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+
+   </head>
+   <!-- body -->
+   <body class="main-layout position_head">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo">
+                              <a href="index.html"><img src="Logom.PNG" alt="#" style="width: 80px; height: 80px;"  /></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                           <ul class="navbar-nav mr-auto">
+                              <li class="nav-item active">
+                                 <a class="nav-link" href="index.html">Inicio</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="about.html">Acerca de</a>
+                              </li>                
+                              <li class="nav-item">
+                                 <a class="nav-link" href="shop.html">Gestionar</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" id="contactLink" href="#">Contacto</a>
+                              </li>
+                                                   
+                           </ul>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- end header inner -->
+      <!-- end header -->
+      <!-- Modal -->
+<!-- Modal -->
+<!-- Modal -->
+<!-- Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content" style="background: transparent; border: none;">
+         <div class="modal-body p-0 d-flex justify-content-center align-items-center">
+            <img src="Whatsapp.png" alt="Imagen de Contacto" class="img-fluid">
+         </div>
+      </div>
+   </div>
+</div>
+
+<!-- JavaScript para activar el modal -->
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+      var contactLink = document.getElementById("contactLink");
+      contactLink.addEventListener("click", function () {
+         $('#contactModal').modal('show');
+      });
+   });
+</script>
+
+
+
+<!-- JavaScript para activar el modal -->
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+      var contactLink = document.getElementById("contactLink");
+      contactLink.addEventListener("click", function () {
+         $('#contactModal').modal('show');
+      });
+   });
+</script>
+      <!-- Our shop section -->
+      <div id="about" class="shop">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-5">
+                  <div  class="shop_img">
+                     <figure><img src="ManI.png" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-7 padding_right0">
+                  <div class="max_width">
+                     <div class="titlepage">
+                        <h2>Ingresa al sistema de inventarios</h2>
+                        <p>Inicia session o registrate para empezar con la mejor experienncia para sistemas de administracion de industrias</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal">
+                           Registrarse
+                       </button>
+                       <!-- Botón para abrir el modal de inicio de sesión -->
+                       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+                           Iniciar Sesión
+                       </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <style>
+         .card {
+            border-radius: 30px;
+            transition: box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+          }
+          
+          .card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+          }
+          
+          .card-body {
+            padding: 25px;
+            text-align: ;
+          }
+          
+          .font-small {
+            font-size: 18px;
+          }
+          
+          .font-bold {
+            font-weight: bold;
+          }
+          
+          .btn-container {
+            margin-top: auto;
+            text-align: center;
+          }
+          
+          .btn-container a.btn {
+            margin-top: 10px;
+          }
+          
+          .badge-container {
+            position: relative;
+          }
+          
+          .badge {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: red;
+            color: white;
+            padding: 5px 5px;
+            border-radius: 5px;
+          }
+          
+          /* Agregar regla para asegurar que el botón esté en la parte inferior */
+          .card .btn-container {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+          }
+          
+         </style>
+         
+       
+       
+       
+      <!-- end Our shop section -->
+      <h1 class="mt-5 text-center text-dark display-4 font-weight-bold">Planes especializados y respaldo de datos</h1>
+
+      <!-- Precios y planes con detalles de soporte técnico -->
+      <div class="container mt-4">
+         <div class="row">
+            <div class="col-md-4">
+               <div class="card h-100">
+                  <div class="card-body">
+                     <h1 class="font-weight-bold">Plan Startup</h1>
+                     <ul class="list-unstyled font-small">
+                        <li>-Ideal para negocios pequeños</li>
+                        <li>-Soporte técnico: 3 días a la semana</li>
+                        <li>-Copia de seguridad mensual</li>
+                        <li>-Disponible en 10 dispositivos simultáneos</li>
+                        <li></li>
+                        <li class="font-bold">$500 cada mes</li>
+                        <a class="btn btn-primary" href="https://www.instagram.com/maninventoryapp/">Contratar</a>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+      
+            <div class="col-md-4">
+               <div class="card h-100">
+                  <div class="badge-container">
+                     <span class="badge">Más Vendido</span>
+                  </div>
+                  <div class="card-body">
+                     <h1 class="font-weight-bold">Plan Pro</h1>
+                     <ul class="list-unstyled font-small">
+                        <li>-Perfecto para negocios con buena posición</li>
+                        <li>-Soporte técnico: 5 días a la semana</li>
+                        <li>-Copia de seguridad semanal</li>
+                        <li>-Disponible en 500 dispositivos simultáneos</li>
+                        <li></li>
+                        <li class="font-bold">$2000 cada mes</li>
+                     </ul>
+                     <a class="btn btn-primary" href="https://www.instagram.com/maninventoryapp/">Contratar</a>
+                  </div>
+               </div>
+            </div>
+            
+      
+            <div class="col-md-4">
+               <div class="card h-100">
+                  <div class="card-body">
+                     <h1 class="font-weight-bold">Plan Industry</h1>
+                     <ul class="list-unstyled font-small">
+                        <li>-Para Industrias grandes</li>
+                        <li>-Copia de seguridad diaria</li>
+                        <li>-Soporte técnico: 24/7 24 horas todos los dias al año</li>
+                        <li>-Disponible en más de 1000 dispositivos simultáneos</li>
+                        <li></li>
+                        <li class="font-bold">$5000 cada mes</li>
+                     </ul>
+                     <a class="btn btn-primary" href="https://www.instagram.com/maninventoryapp/">Contratar</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <br>
+      <br>
+      <!-- Modal para Registrarse -->
+      <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <h5 class="modal-title" id="registerModalLabel">Registrarse</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 </div>
+                 <div class="modal-body">
+                     <!-- Formulario de registro -->
+                     <form action="register.php" method="post">
+                         <div class="mb-3">
+                             <label for="registerName" class="form-label">Nombre</label>
+                             <input type="text" class="form-control" id="registerName" name="registerName" required>
+                         </div>
+                         <div class="mb-3">
+                             <label for="registerEmail" class="form-label">Correo electrónico</label>
+                             <input type="email" class="form-control" id="registerEmail" name="registerEmail" required>
+                         </div>
+                         <div class="mb-3">
+                             <label for="registerPassword" class="form-label">Contraseña</label>
+                             <input type="password" class="form-control" id="registerPassword" name="registerPassword" required>
+                         </div>
+                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                         <button type="submit" class="btn btn-primary">Registrarse</button>
+                     </form>
+                 </div>
+             </div>
+         </div>
+     </div>
+     
+
+<!-- Modal para Iniciar Sesión -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+       <div class="modal-content">
+           <div class="modal-header">
+               <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+           </div>
+           <div class="modal-body">
+               <!-- Formulario de inicio de sesión -->
+               <form action="login.php" method="post">
+                   <div class="mb-3">
+                       <label for="loginEmail" class="form-label">Correo electrónico</label>
+                       <input type="email" class="form-control" id="loginEmail" name="loginEmail" required>
+                   </div>
+                   <div class="mb-3">
+                       <label for="loginPassword" class="form-label">Contraseña</label>
+                       <input type="password" class="form-control" id="loginPassword" name="loginPassword" required>
+                   </div>
+                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                   <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+               </form>
+           </div>
+       </div>
+   </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-8 offset-md-2">
+                     <ul class="location_icon">
+                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a><br> Mexico</li>
+                        <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a><br> +525526936165</li>
+                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a><br> maninventory05@gmail.com</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>© 2024 Todos los derechos a Maninventory</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+   </body>
+</html>
