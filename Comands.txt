@@ -1,0 +1,36 @@
+Create database Gestor;
+use Gestor;
+-- Crear la tabla de Usuarios
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL,
+    correo VARCHAR(255) NOT NULL UNIQUE,
+    contrasena VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE inventarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_usuario INT NOT NULL,
+    nombre_producto VARCHAR(255) NOT NULL,
+    cantidad INT NOT NULL,
+    fecha_movimiento TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    comentario TEXT,
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id)
+);
+
+CREATE TABLE historial_inventario (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_usuario INT NOT NULL,
+    accion VARCHAR(255) NOT NULL,
+    nombre_producto VARCHAR(255) NOT NULL,
+    cantidad INT NOT NULL,
+    fecha_movimiento TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    comentario TEXT,
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id)
+);
+select * from inventarios;
+ALTER TABLE historial_inventario
+ADD COLUMN id_usuario INT NOT NULL;
+
+Drop database Gestor;
+
